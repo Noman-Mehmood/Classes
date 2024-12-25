@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+    background-image: url(assets/flower-729514_1920.jpg) ;
+    background-size: cover;
+
+} */
+nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: black;
+    padding: 10px;
+    /* width: 100%; */
+}
+
+nav ul{
+    background: black;
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+ul li:hover{
+    background: red;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+li .dropdown1 li{
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+li .dropdown1{
+    position: absolute;
+    display: none;
+    margin-left: -10px;
+    margin-top: 10px;
+    width: 150px;
+}
+li:hover .dropdown1{
+    display: block;
+}
+
+
+
+li .cs ul li{
+    display: block;
+    padding: 15px;
+    border-bottom: 1px solid white;
+}
+li .cs ul li a{
+    display: inline;
+}
+.dropdown1 ul li .cs{  
+    position: absolute;
+    display: none;
+    margin-left: 135px;
+    margin-top: -20px;
+    width: 150px;
+
+}
+.dropdown1 li:hover .cs{
+    display: block;
+}
+
+
+
+
+
+
+.cs ul li .prices li{
+    color: white;
+    display: block;
+    background: red;
+    user-select: none;
+    cursor: pointer;
+    padding: 15px 30px;
+
+}
+.cs ul li .prices{
+position: absolute;
+margin-left: 135px;
+margin-top: -20px;
+
+
+}
+
+.prices{
+    display: none;
+}
+
+.cs ul li:hover .prices {
+    display: block;
+}
+
+
+
+
+ul li .down{
+    position: absolute;
+    display: none;
+    margin-left: -10px;
+    margin-top: 10px;
+    
+}
+ul li .down ul li{
+    width: 70%;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+ul li:hover .down{
+    display: block;
+}
+
+
+
+
+.input{
+    margin-right: 45%;
+    position: relative;
+}
+input[type=search]::-ms-clear
+ { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal 
+  { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration 
+{ display: none; }
+.input input{
+    padding: 10px;
+    border: 1px solid red;
+    outline: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    flex: 1;
+    width: 200px;
+}
+.input label{
+    position: absolute;
+    align-items: center;
+    background: red;
+    margin-left: -10px ;
+    margin-top: .5px;
+    padding: 9px 20px;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; 
+}
+
+.input label a{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+
+
+}
+
+
+
+
+.Home{
+    margin-left: -20px;
+}
+
+ul li .dropdown ul li{
+   display: block;
+   padding: 11.2px;
+   border-bottom: 1px solid white;
+   border-top: 1px solid white;
+}
+input[type=search]::-ms-clear { display: none; width : 0; height: 0;}
+ul li .dropdown{
+    display: none;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+ul li:hover .dropdown{
+    display: block;
+}
+li .js ul li{
+    display: block;
+    padding: 11.2px;
+    border-bottom: 1px solid white;
+ }
+ .dropdown ul li .js ul{
+     display: none;
+     position: absolute;
+     margin-left: 78px;
+     margin-top: -29px;
+ }
+ .dropdown ul li:hover .js ul{
+     display: block;
+ }
+ table{
+    width: 100%;
+    border: 1px solid brown;
+    text-align: center;
+    margin-top: 30px;
+ }
+ table tr th{
+    background: rgb(54,48,74);
+    color: white;
+    
+    padding: 15px;
+    margin-left: 20px;
+ }
+ table, tr, th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+
+ }
+ table tr td{
+    padding: 10px;
+ }
+table tr:nth-child(odd){
+    background: gray;
+}
+table tr:nth-child(2){
+ 
+}
